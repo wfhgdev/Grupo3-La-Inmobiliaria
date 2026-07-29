@@ -63,7 +63,7 @@ Asegúrate de tener instalado en tu equipo:
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/) *(si el proyecto usa Node)*
-- Tu editor de código favorito (ej. [VS Code](https://code.visualstudio.com/))
+- [VS Code](https://code.visualstudio.com/))
 
 ---
 
