@@ -17,3 +17,13 @@
   height: 128px;
   object-fit: contain;
 }
+.footer-section-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-title {
+  color: #E8611A;
+  font-weight: bold;
+  font-size: 16px;
+}
