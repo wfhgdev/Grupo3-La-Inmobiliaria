@@ -2,7 +2,7 @@
 
 
 import Header from "./components/header/Header";
-import Banner from './components/banner/Banner'; 
+import Banner from './components/header/Banner'; 
 
 function App() {
   return (
