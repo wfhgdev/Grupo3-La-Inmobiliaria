@@ -10,6 +10,7 @@ function App() {
           image="Flat01"
           price={350}
           available={true}
+          favorite={false}
           description="Habitación luminosa en Malasaña"
           neighborhood="Malasaña"
           distance="8 min a la UCM"
@@ -21,6 +22,7 @@ function App() {
           image="Flat02"
           price={390}
           available={true}
+          favorite={false}
           description="Piso moderno cerca de IE University"
           neighborhood="Salamanca"
           distance="5 min al IE University"
@@ -32,6 +34,7 @@ function App() {
           image="Flat03"
           price={320}
           available={true}
+          favorite={false}
           description="Habitación acogedora en Lavapiés"
           neighborhood="Lavapíes"
           distance="10 min a la URJC"
