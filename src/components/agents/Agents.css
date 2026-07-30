@@ -1,47 +1,80 @@
+
+.agentsHeader {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.agentsSubtitle {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff5722;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.agentsTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.agentsDescription {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+
+.agents-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 .containerOfAgents {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  margin: 20px;
-  max-width: 250px;
+  
+  flex: 0 1 240px; 
 }
 
+
 .imageAgents {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
 
 .agentsTextContainer {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
 .agentsNames {
   font-size: 16px;
-  color: #111827;
+  color: #1a1a1a;
   margin: 0;
 }
 
-.agentsNames strong {
-  font-weight: 600;
-}
-
-.agentsPosition {
-  font-size: 14px;
-  color: #4b5563;
-  margin: 0;
-}
-
-.us {
+.agentsCountry {
   font-size: 13px;
-  color: #6b7280;
-  font-style: italic;
-  margin: 4px 0 0 0;
+  color: #777777;
+  margin: 0;
 }

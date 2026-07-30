@@ -1,38 +1,42 @@
 import './Agents.css';
 
-
 const images = import.meta.glob('../../assets/img/*.png', {
   eager: true,
   import: 'default'
 });
 
-function Testimony(props) {
+function Agents(props) {
+  const imageSrc = props.image ? images[`../../assets/img/${props.image}.png`] : null;
+
   return (
     <div className='containerOfAgents'>
-      <img
-        className='imageAgents'
-        
-        src={images[`../../assets/img/${props.image}.png`]}
-        
-        alt={`Photo of ${props.name}`}
-      />
+      {props.title && (
+        <div className="agentsHeader">
+          <span className="agentsSubtitle">{props.subtitle}</span>
+          <h2 className="agentsTitle">{props.title}</h2>
+          <p className="agentsDescription">{props.description}</p>
+        </div>
+      )}
 
-      <div className='agentsTextContainer'>
-        <p className='agentsNames'>
-          
-          <strong>{props.name}</strong> en {props.country}
-        </p>
+      {imageSrc && (
+        <>
+          <img
+            className='imageAgents'
+            src={imageSrc}
+            alt={`Photo of ${props.name}`}
+          />
 
-        <p className='agentsPosition'>
-        
-          {props.textAgent} en <strong>{props.aboutUs}</strong>
-        </p>
-
-        <p className='us'>
-        
-          "{props.ourTeam}"
-        </p>
-      </div>
+          <div className='agentsTextContainer'>
+            <p className='agentsNames'>
+              <strong>{props.name}</strong>
+            </p>
+            
+            <p className='agentsCountry'>
+              {props.country}
+            </p>
+          </div>
+        </>
+      )}
     </div>
   );
 }
