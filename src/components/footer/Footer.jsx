@@ -1,3 +1,4 @@
+import "./Footer.css";
 import logoUnispace from "../../assets/img/image-icon.png";
 import facebookIcon from "../../assets/img/facebook.png";
 import instagramIcon from "../../assets/img/instagram.png";
