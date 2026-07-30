@@ -11,6 +11,7 @@ function Flats(props) {
         src={images[`../../assets/img/${props.image}.png`]}
         alt={`Picture of ${props.neighborhood} flat`} 
       />
+      <p className='flatPrice'>€{props.price}/mes</p>
       <p className='flatDescription'>{props.description}</p>
       <p className='flatNeighborhood'>{props.neighborhood}</p>
       <p className='flatDistance'>{props.distance}</p>
