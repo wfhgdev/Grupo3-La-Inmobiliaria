@@ -1,1 +1,0 @@
-// ingresamos nuestro codigo principal de react, en este caso App.jsx, que es el que se renderiza en el index.html.
