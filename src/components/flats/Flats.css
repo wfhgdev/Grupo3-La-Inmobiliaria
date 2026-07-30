@@ -1,0 +1,85 @@
+.flats {
+  padding: 3rem 1rem;
+  background-color: #f8fafc;
+}
+
+.flats__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.flats__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 2.25rem);
+  color: #0f172a;
+}
+
+.flats__subtitle {
+  margin: 0.75rem 0 0;
+  color: #475569;
+}
+
+.flats__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.flats__card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flats__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.flats__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.flats__content {
+  padding: 1rem;
+}
+
+.flats__location {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.flats__name {
+  margin: 0.4rem 0;
+  color: #0f172a;
+}
+
+.flats__price {
+  margin: 0;
+  color: #0ea5e9;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.flats__features {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .flats {
+    padding: 2.25rem 0.9rem;
+  }
+
+  .flats__content {
+    padding: 0.9rem;
+  }
+}
