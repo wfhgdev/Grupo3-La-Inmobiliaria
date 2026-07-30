@@ -8,7 +8,7 @@ import emailIcon from "../../assets/img/email.png";
 
 function Footer(){
     return (
-        <>
+        <footer className="footer">
         <img src={logoUnispace} alt="Logo de UniSpace" />
         <h3>Contacto</h3>
 
@@ -21,7 +21,7 @@ function Footer(){
         <p>28004 Madrid, España</p>
 
         <p><img src={emailIcon} alt="Email" /> hola@unispace.es</p>
-        </>
+        </footer>
     );
 }
 
