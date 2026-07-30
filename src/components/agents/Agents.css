@@ -16,3 +16,9 @@
   margin-bottom: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
+
+.agentsTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
