@@ -18,6 +18,7 @@ function Flats(props) {
       <p className='flatBedrooms'>{props.bedroomCount} habitaciones</p>
       <p className='flatWifi'>{props.wifi ? 'WiFi disponible' : 'Sin WiFi'}</p>
       <p className='flatPosition'>{props.position}</p>
+      <button className='flatButton'>Ver más</button>
     </div>
   );
 }
