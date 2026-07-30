@@ -1,1 +1,11 @@
-// ingresamos nuestro codigo principal de react, en este caso App.jsx, que es el que se renderiza en el index.html.
+import About from "./components/about/About";
+
+function App() {
+  return (
+    <>
+      <About />
+    </>
+  );
+}
+
+export default App;
