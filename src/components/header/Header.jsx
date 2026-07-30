@@ -1,16 +1,5 @@
 import "./Header.css";
 
-<<<<<<< HEAD
-function Header(){
-        return(
-            <header className="header">
-                <div className="header-logo">
-                    <span className="logo-icon">🏠</span>
-                    <span className="logo-text">UniSpace</span>
-                </div>
-
-            <nav className="header-nav">
-=======
 function Header() {
   return (
     <header className="header">
@@ -27,7 +16,6 @@ function Header() {
       </div>
 
       <nav className="header-nav">
->>>>>>> feature/flats
         <a href="#inicio">Inicio</a>
         <a href="#pisos">Pisos</a>
         <a href="#nosotros">Nosotros</a>
@@ -36,41 +24,7 @@ function Header() {
 
       <button className="header-button">Publicar Anuncio</button>
     </header>
-<<<<<<< HEAD
-
-        );
-    }
-
-    export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-=======
   );
 }
 
 export default Header;
->>>>>>> feature/flats

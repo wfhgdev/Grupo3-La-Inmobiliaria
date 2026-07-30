@@ -1,8 +1,4 @@
 import "./Footer.css";
-<<<<<<< HEAD
-import logoUnispace from "../../assets/img/image-icon.png";
-=======
->>>>>>> feature/flats
 import facebookIcon from "../../assets/img/facebook.png";
 import instagramIcon from "../../assets/img/instagram.png";
 import phoneIcon from "../../assets/img/telephone.png";
@@ -12,9 +8,6 @@ import emailIcon from "../../assets/img/email.png";
 function Footer() {
   return (
     <footer className="footer">
-<<<<<<< HEAD
-      <img src={logoUnispace} alt="Logo de UniSpace" className="footer-logo" />
-=======
       <div className="footer-logo-container">
         <div className="footer-logo-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +19,6 @@ function Footer() {
           <span className="footer-logo-space">Space</span>
         </span>
       </div>
->>>>>>> feature/flats
 
       <div className="footer-section-social">
         <span className="footer-title">Contacto</span>
@@ -45,11 +37,7 @@ function Footer() {
         <img src={directionIcon} alt="Dirección" className="contact-icon" />
         <div className="address-text">
           <p>Calle de Fuencarral, 72</p>
-<<<<<<< HEAD
-          <p>28004 Madrid, España.</p>
-=======
           <p>28004 Madrid, España</p>
->>>>>>> feature/flats
         </div>
       </div>
 
