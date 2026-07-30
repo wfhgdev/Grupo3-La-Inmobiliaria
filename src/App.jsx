@@ -1,14 +1,13 @@
 import Agents from "./components/agents/Agents";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Banner from './components/header/Banner'; 
+import Banner from "./components/header/Banner";
 
 function App() {
   return (
     <>
-      <Header /> 
+      <Header />
       <Banner />
-
 
       <Agents
         subtitle="NUESTRO EQUIPO"
@@ -17,37 +16,17 @@ function App() {
       />
 
       <div className="agents-wrapper">
-        <Agents
-          name='William Hernández'
-          country='Alicante'
-          image='Willian'        
-        />
-        
-        <Agents
-          name='Willfredy Salcedo'
-          country='Sevilla'
-          image='Willfredy'        
-        />
-        
-        <Agents
-          name='Beatriz Iñiguez'
-          country='Granada'
-          image='Beatriz'        
-        />
-        
-        <Agents
-          name='Oscar Pérez'
-          country='Granada'
-          image='Oscar'        
-        />
-        
-        <Agents
-          name='Margarita Bellido'
-          country='Mallorca'
-          image='Margarita'        
-        />
+        <Agents name="William Hernández" country="Alicante" image="Willian" />
+
+        <Agents name="Willfredy Salcedo" country="Sevilla" image="Willfredy" />
+
+        <Agents name="Beatriz Iñiguez" country="Granada" image="Beatriz" />
+
+        <Agents name="Oscar Pérez" country="Granada" image="Oscar" />
+
+        <Agents name="Margarita Bellido" country="Mallorca" image="Margarita" />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }
