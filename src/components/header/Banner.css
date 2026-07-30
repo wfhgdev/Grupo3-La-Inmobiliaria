@@ -1,79 +1,124 @@
 .banner {
- 
-  background-image: url('../../assets/banner.png');
-  background-size: cover;      
-  background-position: center; 
-
-  
-  aspect-ratio: 1921 / 374;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../../assets/banner.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 380px;
   width: 100%;
-
   display: flex;
-  align-items: center; 
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
 }
 
 .banner-content {
-  max-width: 700px;
+  max-width: 760px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  gap: 18px;
 }
-
 
 .banner-badge {
-  background-color: #e8611a;
-  color: white;
-  padding: 3px 8px;
-  border-radius: 20px; 
-  font-size: 8px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  position: relative;
-  top: -6px;
-  
+  background-color: #ff6a1a;
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-
 .banner-title {
-  color: white;
-  font-size: 40px;
+  color: #ffffff;
+  font-size: 38px;
   font-weight: 800;
-  margin: 16px 0 24px;
-  font-family: 'Nunito', sans-serif;
-  position: relative;
-  top: -12px;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 
 .banner-title-highlight {
-  color: #ff9d5c; 
+  color: #ffaa75;
 }
-
 
 .banner-search {
   display: flex;
-  align-items: center; 
-  background-color: white;
-  border-radius: 10px;
-  padding: 4px 8px;   
-  max-width: 600px;   
-  margin: 0 auto;
-  position: relative;
-  top: -30px;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 5px 5px 5px 18px;
+  width: 100%;
+  max-width: 580px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+.banner-search-icon {
+  color: #888888;
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .banner-search-input {
-  flex: 1; 
+  flex: 1;
   border: none;
-  outline: none; 
-  padding: 10px 16px;
-  font-size: 14px;
+  outline: none;
+  font-size: 13px;
+  color: #333333;
+  background: transparent;
+}
+
+.banner-search-input::placeholder {
+  color: #999999;
+  font-size: 12.5px;
 }
 
 .banner-search-button {
-  background-color: #ff7a1a;
-  color: white;
+  background-color: #ff6a1a;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 22px;
   padding: 10px 24px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.banner-search-button:hover {
+  background-color: #e85a0d;
+}
+
+.banner-search-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 640px) {
+  .banner {
+    min-height: 320px;
+    padding: 30px 16px;
+  }
+  .banner-title {
+    font-size: 26px;
+  }
+  .banner-search {
+    padding: 4px 4px 4px 12px;
+  }
+  .banner-search-input {
+    font-size: 11px;
+  }
+  .banner-search-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
 }

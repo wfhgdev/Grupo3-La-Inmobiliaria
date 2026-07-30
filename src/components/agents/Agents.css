@@ -2,64 +2,55 @@
 .agentsHeader {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 40px auto;
+  margin: 50px auto 30px auto;
   padding: 0 20px;
 }
 
 .agentsSubtitle {
   display: block;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 11px;
+  font-weight: 800;
   text-transform: uppercase;
-  color: #ff5722;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
+  color: #ff6a1a;
+  margin-bottom: 6px;
+  letter-spacing: 1.2px;
 }
 
 .agentsTitle {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 800;
-  color: #1a1a1a;
-  margin-bottom: 12px;
+  color: #111827;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .agentsDescription {
-  font-size: 14px;
-  color: #666666;
+  font-size: 13.5px;
+  color: #6b7280;
   line-height: 1.5;
 }
 
-
-.agents-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-.containerOfAgents {
+.agentCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
-  flex: 0 1 240px; 
+  width: 140px;
 }
-
 
 .imageAgents {
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
 }
 
+.agentCard:hover .imageAgents {
+  transform: scale(1.04);
+}
 
 .agentsTextContainer {
   display: flex;
@@ -68,13 +59,14 @@
 }
 
 .agentsNames {
-  font-size: 16px;
-  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
   margin: 0;
 }
 
 .agentsCountry {
-  font-size: 13px;
-  color: #777777;
+  font-size: 12px;
+  color: #888888;
   margin: 0;
 }

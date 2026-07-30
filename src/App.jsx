@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Banner from "./components/header/Banner";
 import Flats from "./components/flats/Flats";
 import About from "./components/about/About";
-
+import "./styles/App.css";
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
       <section className="flatsSection">
         <div className="flatsHeader">
           <div>
-            <h3>Disponibles ahora</h3>
-            <h1>Habitaciones en Madrid</h1>
+            <span className="flatsSubtitle">DISPONIBLES AHORA</span>
+            <h2 className="flatsTitle">Habitaciones en Madrid</h2>
           </div>
           <a href="#" className="flatsLink">
-            Ver todas
+            Ver todas &rsaquo;
           </a>
         </div>
 
@@ -61,7 +61,9 @@ function App() {
           />
         </div>
       </section>
+
       <About />
+
       <Agents
         subtitle="NUESTRO EQUIPO"
         title="Conoce a nuestros agentes"
@@ -70,21 +72,15 @@ function App() {
 
       <div className="agents-wrapper">
         <Agents name="William Hernández" country="Alicante" image="Willian" />
-
         <Agents name="Willfredy Salcedo" country="Sevilla" image="Willfredy" />
-
         <Agents name="Beatriz Iñiguez" country="Granada" image="Beatriz" />
-
         <Agents name="Oscar Pérez" country="Granada" image="Oscar" />
-
         <Agents name="Margarita Bellido" country="Mallorca" image="Margarita" />
       </div>
-      <Footer />
 
-      
-      
+      <Footer />
     </>
   );
 }
 
-export default App;
+export default App;
