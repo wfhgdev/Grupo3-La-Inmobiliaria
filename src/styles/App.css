@@ -1,1 +1,60 @@
-/* ingrese css aquí */
+/* ...existing code... */
+
+.flatsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.flatsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.flatsHeader h3 {
+  margin: 0 0 8px;
+  color: #ff6a1a;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.flatsHeader h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: #222;
+}
+
+.flatsLink {
+  color: #ff6a1a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.flatsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .flatsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .flatsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .flatsHeader {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
