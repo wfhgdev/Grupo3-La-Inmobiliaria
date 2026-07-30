@@ -28,7 +28,7 @@ function Footer() {
         <img src={directionIcon} alt="Dirección" className="contact-icon" />
         <div className="address-text">
           <p>Calle de Fuencarral, 72</p>
-          <p>28004 Madrid, España</p>
+          <p>28004 Madrid, España.</p>
         </div>
       </div>
 
