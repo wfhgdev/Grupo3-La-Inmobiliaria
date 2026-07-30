@@ -1,5 +1,6 @@
 .header {
   display: flex;
+<<<<<<< HEAD
   justify-content: space-between; 
   align-items: center; 
   padding: 16px 40px;
@@ -26,6 +27,48 @@
   color: #222;
 }
 
+=======
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 48px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  background-color: #ff6a1a;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo-uni {
+  color: #1a1a1a;
+}
+
+.logo-space {
+  color: #ff6a1a;
+}
+>>>>>>> feature/flats
 
 .header-nav {
   display: flex;
@@ -33,6 +76,7 @@
 }
 
 .header-nav a {
+<<<<<<< HEAD
   text-decoration: none; 
   color: #333;
   font-weight: 500;
@@ -55,4 +99,35 @@
 
 .header-button:hover {
   background-color: #e56a10; 
+=======
+  text-decoration: none;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #ff6a1a;
+}
+
+.header-button {
+  background-color: #ff6a1a;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.header-button:hover {
+  background-color: #e85a0d;
+}
+
+.header-button:active {
+  transform: scale(0.98);
+>>>>>>> feature/flats
 }

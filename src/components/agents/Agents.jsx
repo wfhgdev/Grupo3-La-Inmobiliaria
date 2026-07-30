@@ -9,7 +9,11 @@ function Agents(props) {
   const imageSrc = props.image ? images[`../../assets/img/${props.image}.png`] : null;
 
   return (
+<<<<<<< HEAD
     <div className='containerOfAgents'>
+=======
+    <>
+>>>>>>> feature/flats
       {props.title && (
         <div className="agentsHeader">
           <span className="agentsSubtitle">{props.subtitle}</span>
@@ -19,6 +23,7 @@ function Agents(props) {
       )}
 
       {imageSrc && (
+<<<<<<< HEAD
         <>
           <img
             className='imageAgents'
@@ -38,6 +43,21 @@ function Agents(props) {
         </>
       )}
     </div>
+=======
+        <div className="agentCard">
+          <img
+            className="imageAgents"
+            src={imageSrc}
+            alt={`Photo of ${props.name}`}
+          />
+          <div className="agentsTextContainer">
+            <h4 className="agentsNames">{props.name}</h4>
+            <p className="agentsCountry">{props.country}</p>
+          </div>
+        </div>
+      )}
+    </>
+>>>>>>> feature/flats
   );
 }
 

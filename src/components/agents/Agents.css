@@ -2,12 +2,17 @@
 .agentsHeader {
   text-align: center;
   max-width: 600px;
+<<<<<<< HEAD
   margin: 0 auto 40px auto;
+=======
+  margin: 50px auto 30px auto;
+>>>>>>> feature/flats
   padding: 0 20px;
 }
 
 .agentsSubtitle {
   display: block;
+<<<<<<< HEAD
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -42,10 +47,36 @@
 
 
 .containerOfAgents {
+=======
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ff6a1a;
+  margin-bottom: 6px;
+  letter-spacing: 1.2px;
+}
+
+.agentsTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.agentsDescription {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.agentCard {
+>>>>>>> feature/flats
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+<<<<<<< HEAD
   
   flex: 0 1 240px; 
 }
@@ -60,6 +91,24 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+=======
+  width: 140px;
+}
+
+.imageAgents {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.agentCard:hover .imageAgents {
+  transform: scale(1.04);
+}
+>>>>>>> feature/flats
 
 .agentsTextContainer {
   display: flex;
@@ -68,13 +117,24 @@
 }
 
 .agentsNames {
+<<<<<<< HEAD
   font-size: 16px;
   color: #1a1a1a;
+=======
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+>>>>>>> feature/flats
   margin: 0;
 }
 
 .agentsCountry {
+<<<<<<< HEAD
   font-size: 13px;
   color: #777777;
+=======
+  font-size: 12px;
+  color: #888888;
+>>>>>>> feature/flats
   margin: 0;
 }
