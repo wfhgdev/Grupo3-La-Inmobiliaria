@@ -1,5 +1,7 @@
 # 🏠 UniSpace - La Inmobiliaria (Grupo 3)
 
+![Screenshoot Página Principal](./src/assets/img/screenshoot.jpeg)
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-En%20Desarrollo-orange.svg)
