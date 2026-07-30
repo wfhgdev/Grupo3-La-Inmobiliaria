@@ -1,0 +1,79 @@
+.banner {
+ 
+  background-image: url('../../assets/banner.png');
+  background-size: cover;      
+  background-position: center; 
+
+  
+  aspect-ratio: 1921 / 374;
+  width: 100%;
+
+  display: flex;
+  align-items: center; 
+}
+
+.banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.banner-badge {
+  background-color: #e8611a;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 20px; 
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  top: -6px;
+  
+}
+
+
+.banner-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 16px 0 24px;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  top: -12px;
+}
+
+.banner-title-highlight {
+  color: #ff9d5c; 
+}
+
+
+.banner-search {
+  display: flex;
+  align-items: center; 
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px 8px;   
+  max-width: 600px;   
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+
+.banner-search-input {
+  flex: 1; 
+  border: none;
+  outline: none; 
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.banner-search-button {
+  background-color: #ff7a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
