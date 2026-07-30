@@ -47,11 +47,4 @@ function Header(){
 
 
 
-/*function Prueba() {
-        return (
-                <h2>Hola a todos</h2>
-
-        )
-
-}
-export default Prueba;*/
+    
