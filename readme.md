@@ -66,7 +66,6 @@ Grupo3LaInmobiliaria/
 │   └── favicon.svg                  # Icono del sitio web
 ├── src/
 │   ├── assets/                      # Recursos multimedia
-│   │   ├── banner.png               # Fondo del hero banner
 │   │   └── img/                     # Imágenes de inmuebles, agentes y logotipos
 │   ├── components/                  # Componentes React modulares
 │   │   ├── about/                   # Sección "Sobre UniSpace" (About.jsx, About.css)
