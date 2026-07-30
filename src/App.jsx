@@ -1,4 +1,5 @@
 import Agents from "./components/agents/Agents";
+import Footer from "./components/footer/Footer";
 
 function App(){
   return(
@@ -40,6 +41,7 @@ function App(){
           image='Margarita'        
         />
       </div>
+      <Footer/>
     </>
   )
 }
