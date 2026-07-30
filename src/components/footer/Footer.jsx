@@ -6,23 +6,38 @@ import phoneIcon from "../../assets/img/telephone.png";
 import directionIcon from "../../assets/img/direction.png";
 import emailIcon from "../../assets/img/email.png";
 
-function Footer(){
-    return (
-        <footer className="footer">
-        <img src={logoUnispace} alt="Logo de UniSpace" />
-        <h3>Contacto</h3>
+function Footer() {
+  return (
+    <footer className="footer">
+      <img src={logoUnispace} alt="Logo de UniSpace" className="footer-logo" />
 
-        <p><img src={facebookIcon} alt="Facebook" /> Facebook</p>
-        <p><img src={instagramIcon} alt="Instagram" /> Instagram</p>
+      <div className="footer-section-social">
+        <span className="footer-title">Contacto</span>
+        <div className="social-icons">
+          <img src={facebookIcon} alt="Facebook" className="social-icon" />
+          <img src={instagramIcon} alt="Instagram" className="social-icon" />
+        </div>
+      </div>
 
-        <p><img src={phoneIcon} alt="Teléfono" /> +34 987123456</p>
+      <div className="footer-item">
+        <img src={phoneIcon} alt="Teléfono" className="contact-icon" />
+        <span>+34 987123456</span>
+      </div>
 
-        <p><img src={directionIcon} alt="Dirección" /> Calle de Fuencarral, 72</p>
-        <p>28004 Madrid, España</p>
+      <div className="footer-item">
+        <img src={directionIcon} alt="Dirección" className="contact-icon" />
+        <div className="address-text">
+          <p>Calle de Fuencarral, 72</p>
+          <p>28004 Madrid, España</p>
+        </div>
+      </div>
 
-        <p><img src={emailIcon} alt="Email" /> hola@unispace.es</p>
-        </footer>
-    );
+      <div className="footer-item">
+        <img src={emailIcon} alt="Email" className="contact-icon" />
+        <span>hola@unispace.es</span>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
