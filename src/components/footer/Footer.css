@@ -27,3 +27,27 @@
   font-weight: bold;
   font-size: 16px;
 }
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 33px;
+  height: 34px;
+  object-fit: contain;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
