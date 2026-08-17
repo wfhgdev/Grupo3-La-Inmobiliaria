@@ -1,6 +1,6 @@
-import './Banner.css';
+import './BannerComp.css';
 
-function Banner() {
+function BannerComp() {
   return (
     <section className="banner">
       <div className="banner-content">
@@ -42,4 +42,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default BannerComp;

@@ -1,12 +1,12 @@
-import "./Header.css";
+import "./HeaderComp.css";
 
-function Header() {
+function HeaderComp() {
   return (
     <header className="header">
       <div className="header-logo">
         <div className="logo-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
           </svg>
         </div>
         <span className="logo-text">
@@ -27,4 +27,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderComp;
