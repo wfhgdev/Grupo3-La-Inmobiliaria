@@ -7,7 +7,7 @@ import Header from "./components/header/Header";
 import "./styles/App.css";
 //nuevos:
 import { Routes, Route } from "react-router-dom";
-import About from "./pages/about";
+import About from "./pages/about/About";
 // import Flats from "./pages/flats"
 // import Home from "./pages/home"
 // import Agents from "./pages/agents"
