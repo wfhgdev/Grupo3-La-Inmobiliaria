@@ -1,8 +1,9 @@
-import About from "../../pages/about/";
+import AboutComp from "../../components/about/AboutComp";
+
 
 const About = () => {
   return (
-    <About />
+    <AboutComp />
   );
 };
 
