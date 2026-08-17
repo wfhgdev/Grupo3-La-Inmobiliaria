@@ -8,9 +8,9 @@ import "./styles/App.css";
 //nuevos:
 import { Routes, Route } from "react-router-dom"
 import About from "./pages/about"
-import Flats from "./pages/flats"
-import Home from "./pages/home"
-import Agents from "./pages/agents"
+// import Flats from "./pages/flats"
+// import Home from "./pages/home"
+// import Agents from "./pages/agents"
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
       <Header />
       <main className="p-6">
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} />
           <Route path="/flats" element={<Flats />} />
-          <Route path="/agents" element={<Agents />} />
+          <Route path="/agents" element={<Agents />} /> */}
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
