@@ -1,13 +1,13 @@
-import Agents from "./components/agents/Agents";
+// import Agents from "./components/agents/Agents";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Banner from "./components/header/Banner";
-import Flats from "./components/flats/Flats";
-import About from "./components/about/About";
+// import Banner from "./components/header/Banner";
+// import Flats from "./components/flats/Flats";
+// import About from "./components/about/About";
 import "./styles/App.css";
 //nuevos:
-import { Routes, Route } from "react-router-dom"
-import About from "./pages/about"
+import { Routes, Route } from "react-router-dom";
+import About from "./pages/about";
 // import Flats from "./pages/flats"
 // import Home from "./pages/home"
 // import Agents from "./pages/agents"
