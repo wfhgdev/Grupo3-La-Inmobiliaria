@@ -1,11 +1,11 @@
-import './Agents.css';
+import '../../components/agents/Agents.css';
 
 const images = import.meta.glob('../../assets/img/*.png', {
   eager: true,
   import: 'default'
 });
 
-function Agents(props) {
+function AgentsPage(props) {
   const imageSrc = props.image ? images[`../../assets/img/${props.image}.png`] : null;
 
   return (
@@ -35,4 +35,4 @@ function Agents(props) {
   );
 }
 
-export default Agents;
+export default AgentsPage;
