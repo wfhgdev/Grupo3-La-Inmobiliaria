@@ -7,13 +7,14 @@
 
 //nuevos:
 import { Routes, Route } from "react-router-dom"
-// import About from "./pages/about/About";
+import About from "./pages/about/About";
 // import Flats from "./pages/flats/Flats";
 // import Home from "./pages/home/Home";
-import AgentsPages from "./pages/agents/AgentsPage";
+// import Agents from "./pages/agents/Agents";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import "./styles/App.css";
+import Agents from "./components/agents/Agents";
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           {/* <Route path="/flats" element={<Flats />} /> */}
-          <Route path="/agents" element={<AgentsPages />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/agents" element={<Agents />} /> */}
+          {<Route path="/about" element={<About />} /> }
         </Routes>
       </main>
       <Footer />
