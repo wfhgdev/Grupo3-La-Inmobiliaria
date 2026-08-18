@@ -52,7 +52,7 @@ const Flats = () => {
                 />
                 <FlatsComp
                     image="Flat04"
-                    price={320}
+                    price={390}
                     available={true}
                     favorite={false}
                     description="Habitación acogedora en Lavapiés"
@@ -64,7 +64,7 @@ const Flats = () => {
                 />
                 <FlatsComp
                     image="Flat05"
-                    price={320}
+                    price={450}
                     available={true}
                     favorite={false}
                     description="Habitación acogedora en Lavapiés"
@@ -76,7 +76,7 @@ const Flats = () => {
                 />
                 <FlatsComp
                     image="Flat06"
-                    price={320}
+                    price={650}
                     available={true}
                     favorite={false}
                     description="Habitación acogedora en Lavapiés"
