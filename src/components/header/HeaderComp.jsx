@@ -1,4 +1,7 @@
-import { Link } from "react-router-dom"
+<<<<<<< HEAD
+=======
+import { Link } from "react-router-dom";
+>>>>>>> eef426310beb3cbaa192904ba019f51f3a2dda6e
 import "./HeaderComp.css";
 
 function HeaderComp() {
@@ -16,7 +19,7 @@ function HeaderComp() {
         </span>
       </div>
 
-      <nav className="header-nav">
+       <nav className="header-nav">
         <Link to="/">Inicio</Link>
         <Link to="/flats">Pisos</Link>
         <Link to="/about">Nosotros</Link>
@@ -28,4 +31,8 @@ function HeaderComp() {
   );
 }
 
+<<<<<<< HEAD
 export default HeaderComp;
+=======
+export default HeaderComp;   
+>>>>>>> eef426310beb3cbaa192904ba019f51f3a2dda6e
