@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-import { Link } from "react-router-dom";
->>>>>>> eef426310beb3cbaa192904ba019f51f3a2dda6e
+import {Link} from "react-router-dom";
 import "./HeaderComp.css";
 
 function HeaderComp() {
@@ -31,8 +28,4 @@ function HeaderComp() {
   );
 }
 
-<<<<<<< HEAD
 export default HeaderComp;
-=======
-export default HeaderComp;   
->>>>>>> eef426310beb3cbaa192904ba019f51f3a2dda6e
