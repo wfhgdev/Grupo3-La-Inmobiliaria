@@ -1,5 +1,6 @@
 import './FlatsComp.css';
 
+
 const images = import.meta.glob('../../assets/img/*.png', { eager: true, import: 'default' });
 
 function FlatsComp(props) {
@@ -54,9 +55,10 @@ function FlatsComp(props) {
           </span>
         </div>
 
-        <button className="flatButton">
+         <button className="flatButton">
           Ver detalles &rsaquo;
         </button>
+
       </div>
     </article>
   );

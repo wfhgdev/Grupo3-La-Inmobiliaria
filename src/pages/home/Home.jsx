@@ -2,6 +2,7 @@ import BannerComp from "../../components/header/BannerComp";
 import FlatsComp from "../../components/flats/FlatsComp";
 import AboutComp from "../../components/about/AboutComp";
 import AgentsComp from "../../components/agents/AgentsComp";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,9 +14,11 @@ const Home = () => {
             <span className="flatsSubtitle">DISPONIBLES AHORA</span>
             <h2 className="flatsTitle">Habitaciones en Madrid</h2>
           </div>
-          <a href="#" className="flatsLink">
+
+          <Link to="/flats" className="flatsLink">
             Ver todas &rsaquo;
-          </a>
+          </Link>
+
         </div>
 
         <div className="flatsGrid">
