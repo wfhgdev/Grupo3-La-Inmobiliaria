@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Meals.css";
 
-function App() {
+function Meals() {
   const [Meals, setMeals] = useState([]);
   const [error, setError] = useState(null);
 
@@ -16,7 +16,7 @@ function App() {
         setMeals(response.data.meals);
       } catch (error) {
         setError("No se pudieron cargar los platos.");
-      } 
+      }
     };
 
     getMeals();
@@ -28,24 +28,20 @@ function App() {
 
       {error && <p>{error}</p>}
 
-        <ul>
-          {Meals.map((meal) => (
-            <li key={meal.idMeal}>
-              <img
-                src={meal.strMealThumb}
-                alt={meal.strMeal}
-                width="100"
-              />
-
-              <h2>{meal.strMeal}</h2>
-
-        
-            </li>
-          ))}
-        </ul>
- 
+      <ul>
+        {Meals.map((meal) => (
+          <li key={meal.idMeal}>
+            <img
+              src={meal.strMealThumb}
+              alt={meal.strMeal}
+              width="100"
+            />
+            <h2>{meal.strMeal}</h2>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }
 
-export default App;
+export default Meals;
