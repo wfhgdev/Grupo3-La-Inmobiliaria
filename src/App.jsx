@@ -6,6 +6,7 @@ import About from "./pages/about/About";
 import Home from "./pages/home/Home"
 import Flats from "./pages/flats/Flats"
 import Agents from "./pages/agents/Agents"
+import Menuthree from "./pages/menuthree/Menuthree";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {<Route path="/flats" element={<Flats />} />}
           {<Route path="/agents" element={<Agents />} />}
           {<Route path="/about" element={<About />} />}
+          {<Route path="/menuthree" element={<Menuthree />} />}
         </Routes>
       </main>
       <FooterComp />

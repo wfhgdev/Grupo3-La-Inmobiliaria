@@ -28,19 +28,17 @@ function App() {
       {error && <p>{error}</p>}
 
         <ul>
-          {Meals.map((character) => (
-            <li key={character.id}>
+          {Meals.map((meal) => (
+            <li key={meal.idMeal}>
               <img
-                src={character.image}
-                alt={character.name}
+                src={meal.strMealThumb}
+                alt={meal.strMeal}
                 width="100"
               />
 
-              <h2>{character.name}</h2>
+              <h2>{meal.strMeal}</h2>
 
-              <p>{character.species}</p>
-              <p>{character.status}</p>
-              <p>{character.gender}</p>
+
             </li>
           ))}
         </ul>
