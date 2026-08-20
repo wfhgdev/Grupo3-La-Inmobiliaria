@@ -6,7 +6,7 @@ import About from "./pages/about/About";
 import Home from "./pages/home/Home"
 import Flats from "./pages/flats/Flats"
 import Agents from "./pages/agents/Agents"
-
+import Meals from "./pages/meals/meals"
 
 
 function App() {
