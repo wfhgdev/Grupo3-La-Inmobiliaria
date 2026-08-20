@@ -17,6 +17,7 @@ function App() {
           {<Route path="/flats" element={<Flats />} />}
           {<Route path="/agents" element={<Agents />} />}
           {<Route path="/about" element={<About />} />}
+          {<Route path="/meals" element={<Meals />} />}
         </Routes>
       </main>
       <FooterComp />
