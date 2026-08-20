@@ -53,10 +53,6 @@ function FlatsComp(props) {
             {props.position}
           </span>
         </div>
-
-        <button className="flatButton">
-          Ver detalles &rsaquo;
-        </button>
       </div>
     </article>
   );
