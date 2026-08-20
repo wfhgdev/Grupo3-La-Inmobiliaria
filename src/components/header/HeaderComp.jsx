@@ -18,7 +18,7 @@ function HeaderComp() {
 
       <nav className="header-nav">
         <Link to="/">Inicio</Link>
-        <Link to="/flats">Pisos</Link>
+        <Link to="/flats">Habitaciones</Link>
         <Link to="/about">Nosotros</Link>
         <Link to="/agents">Agentes</Link>
         <Link to="/meals">Comida</Link>
