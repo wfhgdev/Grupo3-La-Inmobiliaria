@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./Meals.css";
 
 function App() {
   const [Meals, setMeals] = useState([]);
