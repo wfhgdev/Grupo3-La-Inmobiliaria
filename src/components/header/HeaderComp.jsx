@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./HeaderComp.css";
 
 function HeaderComp() {
@@ -16,14 +16,13 @@ function HeaderComp() {
         </span>
       </div>
 
-       <nav className="header-nav">
+      <nav className="header-nav">
         <Link to="/">Inicio</Link>
         <Link to="/flats">Pisos</Link>
         <Link to="/about">Nosotros</Link>
         <Link to="/agents">Agentes</Link>
+        <Link to="/meals">Comida</Link>
       </nav>
-
-      <button className="header-button">Publicar Anuncio</button>
     </header>
   );
 }

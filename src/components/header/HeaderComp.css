@@ -1,6 +1,6 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 14px 48px;
   background-color: #ffffff;
@@ -15,6 +15,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  justify-self: start;
 }
 
 .logo-icon {
@@ -44,6 +45,8 @@
 .header-nav {
   display: flex;
   gap: 32px;
+  justify-content: center;
+  justify-self: center;
 }
 
 .header-nav a {
