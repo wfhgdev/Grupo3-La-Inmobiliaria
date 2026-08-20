@@ -1,7 +1,7 @@
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Menuthre.css";
-
 
 function Menuthree() {
   const [meals, setMeals] = useState([]);
@@ -13,41 +13,66 @@ function Menuthree() {
         const response = await axios.get(
           "https://www.themealdb.com/api/json/v1/1/filter.php?a=Spain"
         );
-
-        setMeals(response.data.meals);
-      } catch (error) {
+        setMeals(response.data.meals || []);
+      } catch (err) {
         setError("No se pudieron cargar los platos.");
-      } 
+      }
     };
 
     getMeals();
   }, []);
 
   return (
-    <main>
-      <h1>Meals on Spain</h1>
+    <section className="mealsSection">
+      <div className="mealsHeader">
+        <div>
+          <span className="mealsSubtitle">GASTRONOMÍA ESPAÑOLA</span>
+          <h2 className="mealsTitle">Platos de España</h2>
+        </div>
+      </div>
 
-      {error && <p>{error}</p>}
+      {error && <p className="mealsError">{error}</p>}
 
-        <ul>
-          {Meals.map((meal) => (
-            <li key={meal.idMeal}>
+      <div className="mealsGrid">
+        {meals.map((meal) => (
+          <article className="mealCard" key={meal.idMeal}>
+            <div className="mealImageWrapper">
               <img
+                className="mealImage"
                 src={meal.strMealThumb}
                 alt={meal.strMeal}
-                width="100"
               />
+              <span className="mealTag">Española</span>
+            </div>
 
-              <h2>{meal.strMeal}</h2>
+            <div className="mealContent">
+              <h3 className="mealTitle">{meal.strMeal}</h3>
 
-
-            </li>
-          ))}
-        </ul>
- 
-    </main>
+              <div className="mealLocationRow">
+                <svg
+                  className="mealLocIcon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff6a1a"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span className="mealNeighborhood">España</span>
+                <span className="mealDot">•</span>
+                <span className="mealDistance">Receta Tradicional</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
 export default Menuthree;
-
