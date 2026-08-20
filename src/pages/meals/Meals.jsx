@@ -16,7 +16,7 @@ function Meals() {
         setMeals(response.data.meals);
       } catch (error) {
         setError("No se pudieron cargar los platos.");
-      } 
+      }
     };
 
     getMeals();
@@ -28,22 +28,18 @@ function Meals() {
 
       {error && <p>{error}</p>}
 
-        <ul>
-          {Meals.map((meal) => (
-            <li key={meal.idMeal}>
-              <img
-                src={meal.strMealThumb}
-                alt={meal.strMeal}
-                width="100"
-              />
-
-              <h2>{meal.strMeal}</h2>
-
-        
-            </li>
-          ))}
-        </ul>
- 
+      <ul>
+        {Meals.map((meal) => (
+          <li key={meal.idMeal}>
+            <img
+              src={meal.strMealThumb}
+              alt={meal.strMeal}
+              width="100"
+            />
+            <h2>{meal.strMeal}</h2>
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }
