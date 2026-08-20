@@ -1,6 +1,16 @@
 import './BannerComp.css';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function BannerComp() {
+  const [busqueda, setBusqueda] = useState('');
+  const navigate = useNavigate(); 
+
+  const handleBuscar = () => {
+    
+    navigate(`/flats?universidad=${busqueda}`);
+  };
+
   return (
     <section className="banner">
       <div className="banner-content">
@@ -34,8 +44,10 @@ function BannerComp() {
             type="text"
             placeholder="Encuentra tu habitación compartida en Madrid (Barrio/Universidad)"
             className="banner-search-input"
+            value={busqueda}
+            onChange={(e) => setBusqueda(e.target.value)}
           />
-          <button className="banner-search-button">Buscar</button>
+          <button className="banner-search-button" onClick={handleBuscar}>Buscar</button>
         </div>
       </div>
     </section>
