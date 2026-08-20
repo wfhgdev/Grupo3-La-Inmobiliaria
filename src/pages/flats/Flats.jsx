@@ -1,5 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import FlatsComp from "../../components/flats/FlatsComp";
+import { Link } from "react-router-dom";
 
 const habitaciones = [
   {
@@ -100,9 +101,9 @@ const Flats = () => {
                     <span className="flatsSubtitle">DISPONIBLES AHORA</span>
                     <h2 className="flatsTitle">Habitaciones en Madrid</h2>
                 </div>
-                <a href="#" className="flatsLink">
-                    Ver todas &rsaquo;
-                </a>
+                <Link to="/flats" className="flatsLink">
+                     Ver todas &rsaquo;
+                </Link>
             </div>
 
            <div className="flatsGrid">
