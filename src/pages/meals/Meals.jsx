@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Meals.css";
 
-function App() {
+function Meals() {
   const [Meals, setMeals] = useState([]);
   const [error, setError] = useState(null);
 
@@ -48,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default Meals;
