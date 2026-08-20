@@ -16,6 +16,8 @@
   gap: 10px;
   cursor: pointer;
   justify-self: start;
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-icon {
@@ -35,11 +37,14 @@
 }
 
 .logo-uni {
-  color: #1a1a1a;
+  color: #070707;
+ 
 }
 
 .logo-space {
   color: #ff6a1a;
+  text-decoration: none;
+  
 }
 
 .header-nav {

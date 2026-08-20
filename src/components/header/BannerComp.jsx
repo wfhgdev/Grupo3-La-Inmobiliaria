@@ -5,9 +5,14 @@ import { useNavigate } from 'react-router-dom';
 function BannerComp() {
   const [busqueda, setBusqueda] = useState('');
   const navigate = useNavigate(); 
+  const [error, setError] = useState('');
 
   const handleBuscar = () => {
-    
+    if (busqueda === '') {
+    setError('Por favor, elige una universidad para buscar.');
+    return;
+  }
+    setError(''); 
     navigate(`/flats?universidad=${busqueda}`);
   };
 
@@ -24,6 +29,8 @@ function BannerComp() {
             universitario en Madrid.
           </span>
         </h1>
+        {error && <p className="banner-search-error">{error}</p>}
+
 
         <div className="banner-search">
           <svg
@@ -47,7 +54,7 @@ function BannerComp() {
             <option value="URJC">URJC</option>
             <option value="IE University">IE University</option>
           </select>
-
+          
           {/* <input
             type="text"
             placeholder="Encuentra tu habitación compartida en Madrid (Barrio/Universidad)"
@@ -57,6 +64,7 @@ function BannerComp() {
           /> */}
           <button className="banner-search-button" onClick={handleBuscar}>Buscar</button>
         </div>
+        
       </div>
     </section>
   );

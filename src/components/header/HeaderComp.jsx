@@ -4,7 +4,8 @@ import "./HeaderComp.css";
 function HeaderComp() {
   return (
     <header className="header">
-      <div className="header-logo">
+      <Link to="/" className="header-logo">
+        <div className="header-logo">
         <div className="logo-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
@@ -15,6 +16,7 @@ function HeaderComp() {
           <span className="logo-space">Space</span>
         </span>
       </div>
+      </Link>
 
       <nav className="header-nav">
         <Link to="/">Inicio</Link>
