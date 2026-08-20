@@ -2,33 +2,33 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 function App() {
-  const [characters, setCharacters] = useState([]);
+  const [Meals, setMeals] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const getCharacters = async () => {
+    const getMeals = async () => {
       try {
         const response = await axios.get(
-          "https://rickandmortyapi.com/api/character"
+          "https://www.themealdb.com/api/json/v1/1/filter.php?a=Spain"
         );
 
-        setCharacters(response.data.results);
+        setMeals(response.data.meals);
       } catch (error) {
-        setError("No se pudieron cargar los personajes.");
+        setError("No se pudieron cargar los platos.");
       } 
     };
 
-    getCharacters();
+    getMeals();
   }, []);
 
   return (
     <main>
-      <h1>Rick and Morty</h1>
+      <h1>Meals on Spain</h1>
 
       {error && <p>{error}</p>}
 
         <ul>
-          {characters.map((character) => (
+          {Meals.map((character) => (
             <li key={character.id}>
               <img
                 src={character.image}
