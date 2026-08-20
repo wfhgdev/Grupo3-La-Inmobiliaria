@@ -4,7 +4,7 @@ import axios from "axios";
 function App() {
 
   useEffect(() => {
-    const getCharacters = async () => {
+    const getMeals = async () => {
       const response = await axios.get(
         "https://www.themealdb.com/api/json/v1/1/filter.php?a=Canada"
       );
@@ -12,8 +12,9 @@ function App() {
       console.log(response);
     };
 
-    getCharacters();
+    getMeals();
   }, []);
+    
 
   return (
     <main>
