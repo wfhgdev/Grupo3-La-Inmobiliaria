@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./Menuthre.css";
 
-function App() {
-  const [Meals, setMeals] = useState([]);
+
+function Menuthree() {
+  const [meals, setMeals] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -47,4 +49,5 @@ function App() {
   );
 }
 
-export default App;
+export default Menuthree;
+
