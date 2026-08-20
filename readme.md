@@ -34,7 +34,7 @@
 
 ## 📖 Descripción
 
-**UniSpace** es un proyecto enfocado en solucionar la búsqueda de vivienda compartida para estudiantes en la Comunidad de Madrid. La plataforma destaca por un catálogo visual interactivo de habitaciones y pisos disponibles, información sobre agentes inmobiliarios de confianza, detalles de ubicación y servicios (Wi-Fi, estado exterior/interior, número de camas) y canales directos de contacto.
+**UniSpace** es un proyecto enfocado en solucionar la búsqueda de vivienda compartida para estudiantes en la Comunidad de Madrid. La plataforma destaca por un catálogo visual interactivo de habitaciones y pisos disponibles, información sobre agentes inmobiliarios de confianza, detalles de ubicación y servicios (Wi-Fi, estado exterior/interior, número de camas), sección gastronómica e integración con APIs externas.
 
 ---
 
@@ -42,6 +42,8 @@
 
 - 🔍 **Banner Principal y Búsqueda:** Buscador centralizado por barrio o universidad (UCM, IE, URJC, etc.).
 - 🏠 **Catálogo de Habitaciones y Pisos:** Tarjetas interactivas con estados (`Disponible`, `Últimas plazas`), precios claros (`€/mes`), distancia a campus y características detalladas.
+- 🍲 **Sección de Gastronomía (Comida):** Consulta e integración dinámica con la API externa **TheMealDB** mediante **Axios** para explorar platos típicos locales.
+- 🧭 **Barra de Navegación Centrada (Header Nav):** Navegación fluida y perfectamente almidonada conectando todas las vistas de la aplicación (`Inicio`, `Habitaciones`, `Nosotros`, `Agentes`, `Comida`).
 - 🤝 **Sección "Sobre UniSpace":** Reseña e historia del servicio enfocado en alojamiento universitario seguro y transparente.
 - 👥 **Equipo de Agentes Inmobiliarios:** Galería visual con perfiles de agentes listos para asesorar a los estudiantes.
 - 📞 **Pie de Página Completo:** Accesos directos a redes sociales (Facebook, Instagram), teléfono de contacto, dirección física en Madrid y correo de atención.
@@ -53,6 +55,8 @@
 
 - **Core & Framework:** [React 19](https://react.dev/)
 - **Empaquetador y Servidor Dev:** [Vite](https://vitejs.dev/)
+- **Enrutamiento:** [React Router DOM](https://reactrouter.com/)
+- **Cliente HTTP & APIs:** [Axios](https://axios-http.com/) para conectar con la API de [TheMealDB](https://www.themealdb.com/)
 - **Estilos:** Vanilla CSS3 con diseño responsivo, Flexbox y CSS Grid
 - **Tipografía:** Google Fonts (*Plus Jakarta Sans*)
 - **Calidad de Código y Linting:** ESLint
@@ -70,20 +74,26 @@ Grupo3LaInmobiliaria/
 │   ├── assets/                      # Recursos multimedia
 │   │   └── img/                     # Imágenes de inmuebles, agentes y logotipos
 │   ├── components/                  # Componentes React modulares
-│   │   ├── about/                   # Sección "Sobre UniSpace" (About.jsx, About.css)
-│   │   ├── agents/                  # Sección de Agentes (Agents.jsx, Agents.css)
-│   │   ├── flats/                   # Tarjetas de Habitaciones/Pisos (Flats.jsx, Flats.css)
-│   │   ├── footer/                  # Pie de página (Footer.jsx, Footer.css)
-│   │   └── header/                  # Navegación y Banner principal (Header.jsx, Banner.jsx, etc.)
+│   │   ├── about/                   # Sección "Sobre UniSpace" (AboutComp.jsx, AboutComp.css)
+│   │   ├── agents/                  # Sección de Agentes (AgentsComp.jsx, AgentsComp.css)
+│   │   ├── flats/                   # Tarjetas de Habitaciones/Pisos (FlatsComp.jsx, FlatsComp.css)
+│   │   ├── footer/                  # Pie de página (FooterComp.jsx, FooterComp.css)
+│   │   └── header/                  # Navegación centrada y Banner (HeaderComp.jsx, HeaderComp.css, Banner.jsx)
+│   ├── pages/                       # Vistas principales de las rutas
+│   │   ├── about/                   # Página Nosotros (About.jsx)
+│   │   ├── agents/                  # Página Agentes (Agents.jsx)
+│   │   ├── flats/                   # Página Habitaciones (Flats.jsx)
+│   │   ├── home/                    # Página Inicio (Home.jsx)
+│   │   └── meals/                   # Página Comida integrada con Axios & TheMealDB (Meals.jsx, Meals.css)
 │   ├── styles/                      # Hojas de estilo globales
 │   │   ├── App.css                  # Estilos de contenedores y secciones
 │   │   └── index.css                # Resets y variables de estilos base
-│   ├── App.jsx                      # Componente principal de la aplicación
+│   ├── App.jsx                      # Configuración de rutas y layout principal
 │   └── main.jsx                     # Punto de entrada de la aplicación React
 ├── index.html                       # Documento HTML principal
-├── package.json                     # Gestión de dependencias y scripts de NPM
+├── package.json                     # Gestión de dependencias (Axios, React Router, etc.)
 ├── vite.config.js                   # Configuración del entorno Vite
-└── readme.md                        # Documentación del proyecto
+└── README.md                        # Documentación del proyecto
 ```
 
 ---
@@ -113,6 +123,7 @@ cd Grupo3-La-Inmobiliaria
 
 ```bash
 npm install
+npm install axios
 ```
 
 ### 3. Iniciar el servidor de desarrollo
