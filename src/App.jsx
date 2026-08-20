@@ -7,6 +7,8 @@ import Home from "./pages/home/Home"
 import Flats from "./pages/flats/Flats"
 import Agents from "./pages/agents/Agents"
 
+
+
 function App() {
   return (
     <>
