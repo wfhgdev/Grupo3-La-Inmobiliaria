@@ -75,6 +75,17 @@
   font-size: 13px;
   color: #333333;
   background: transparent;
+  /* Nuevo: necesario para que el <select> se comporte como el <input> */
+  appearance: none;          /* quita el estilo nativo del select (flecha y borde del navegador) */
+  -webkit-appearance: none;  /* misma cosa, para Chrome/Safari */
+  -moz-appearance: none;     /* misma cosa, para Firefox */
+  padding: 10px 8px;         /* le da más "cuerpo" para que no se vea chiquito */
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23888888'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  padding-right: 28px; /* deja espacio para que la flecha no se monte encima del texto */
 }
 
 .banner-search-input::placeholder {

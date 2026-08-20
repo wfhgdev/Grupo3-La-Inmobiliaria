@@ -40,13 +40,21 @@ function BannerComp() {
             <circle cx="11" cy="11" r="8" />
             <line x1="21" y1="21" x2="16.65" y2="16.65" />
           </svg>
-          <input
+
+          <select className="banner-search-input" value={busqueda} onChange={(e) => setBusqueda(e.target.value)}>
+            <option value="">-- Elige universidad --</option>
+            <option value="UCM">UCM</option>
+            <option value="URJC">URJC</option>
+            <option value="IE University">IE University</option>
+          </select>
+
+          {/* <input
             type="text"
             placeholder="Encuentra tu habitación compartida en Madrid (Barrio/Universidad)"
             className="banner-search-input"
             value={busqueda}
             onChange={(e) => setBusqueda(e.target.value)}
-          />
+          /> */}
           <button className="banner-search-button" onClick={handleBuscar}>Buscar</button>
         </div>
       </div>
