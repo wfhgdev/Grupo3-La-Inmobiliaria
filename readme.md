@@ -123,7 +123,6 @@ cd Grupo3-La-Inmobiliaria
 
 ```bash
 npm install
-npm install axios
 ```
 
 ### 3. Iniciar el servidor de desarrollo
