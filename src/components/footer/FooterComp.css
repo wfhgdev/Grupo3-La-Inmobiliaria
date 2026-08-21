@@ -12,13 +12,13 @@
   gap: 24px;
 }
 
-.footer-logo-container {
+.footerLogoContainer {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.footer-logo-icon {
+.footerLogoIcon {
   background-color: #ff6a1a;
   width: 28px;
   height: 28px;
@@ -28,39 +28,39 @@
   justify-content: center;
 }
 
-.footer-logo-text {
+.footerLogoText {
   font-size: 20px;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
 
-.footer-logo-uni {
+.footerLogoUni {
   color: #ffffff;
 }
 
-.footer-logo-space {
+.footerLogoSpace {
   color: #ff6a1a;
 }
 
-.footer-section-social {
+.footerSectionSocial {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.footer-title {
+.footerTitle {
   color: #ff6a1a;
   font-weight: 800;
   font-size: 14px;
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.social-icon {
+.socialIcon {
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -70,11 +70,11 @@
   transition: opacity 0.2s ease;
 }
 
-.social-icon:hover {
+.socialIcon:hover {
   opacity: 1;
 }
 
-.footer-item {
+.footerItem {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -83,7 +83,7 @@
   white-space: nowrap;
 }
 
-.contact-icon {
+.contactIcon {
   width: 18px;
   height: 18px;
   object-fit: contain;
@@ -91,12 +91,12 @@
   filter: invert(53%) sepia(87%) saturate(2250%) hue-rotate(345deg) brightness(101%) contrast(101%);
 }
 
-.address-text {
+.addressText {
   display: flex;
   flex-direction: column;
 }
 
-.address-text p {
+.addressText p {
   margin: 0;
   line-height: 1.35;
   font-size: 13px;
