@@ -146,11 +146,11 @@ npm run build
 
 Proyecto desarrollado con dedicación por el **Grupo 3**:
 
-- **Beatriz Iñiguez Cascales** – *Scrum Master y Desarrolladora*
-- **William Fernando Hernández Galvis** – *Desarrollador*
-- **Oscar Perez** – *Desarrollador*
-- **Margarita Bellido Roig** – *Desarrolladora*
-- **Willfredy Salcedo Silvestre** – *Product Owner y Desarrolladora*
+- **Beatriz Iñiguez Cascales** – *Scrum Master y Desarrolladora* [LinkedIn](https://www.linkedin.com/in/beatriz-iniguez-cascales-dev/)
+- **William Fernando Hernández Galvis** – *Desarrollador* [LinkedIn](https://www.linkedin.com/in/william-hernandez-ti/)
+- **Oscar Perez** – *Desarrollador* [LinkedIn](https://www.linkedin.com/in/oscareduardoperezrodriguez/)
+- **Margarita Bellido Roig** – *Desarrolladora* [GitHub](https://github.com/margaritabellidoroig)
+- **Willfredy Salcedo Silvestre** – *Product Owner y Desarrolladora* [GitHub](https://github.com/Willfredy742)
 
 ---
 
