@@ -21,7 +21,7 @@ function HeaderComp() {
         <Link to="/flats">Habitaciones</Link>
         <Link to="/about">Nosotros</Link>
         <Link to="/agents">Agentes</Link>
-        <Link to="/meals">Comida</Link>
+        <Link to="/meals">Gastronomia</Link>
       </nav>
     </header>
   );
